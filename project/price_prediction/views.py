@@ -2,7 +2,7 @@ from django.shortcuts import render
 import joblib
 
 # Load the trained model
-model = joblib.load('C:\\Users\\Alfin\\PycharmProjects\\electricity_bill\\project\\price_prediction\\models\\linear_regression_model.joblib')
+model = joblib.load('electricity_bill\\project\\price_prediction\\models\\linear_regression_model.joblib')
 
 def predict_price(request):
     predicted_price = None  # Initialize to None
